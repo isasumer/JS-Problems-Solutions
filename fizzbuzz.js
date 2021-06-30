@@ -7,7 +7,7 @@
 let n = prompt("Please enter a number")
 fizzbuzz(n) */
 
-function fizzbuzz(n){
+/* function fizzbuzz(n){
     for (let i = 1; i < n; i++) {
         if (i%3 === 0){
         console.log(`${i} : fizz `)
@@ -24,4 +24,4 @@ function fizzbuzz(n){
 }
 }
 let n = prompt("Please enter a number");
-fizzbuzz(n);
+fizzbuzz(n); */
