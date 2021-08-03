@@ -13,3 +13,13 @@ function clickEvent () {
    this.id == "increase" ? counter += 1 :  counter -= 1;
    counterDOM.innerHTML = counter 
    }
+
+let list = ["HTML", "CSS", "JS", "React"]
+const userlist = document.querySelector("#userlist")
+
+for (let index = 0; index < list.length; index++) {
+    const liDOM = document.createElement("li");
+    liDOM.innerHTML = list [index]
+    userlist.appendChild(liDOM)
+    
+}
