@@ -36,3 +36,10 @@ const seriesList = b => {
     })
 }
 seriesList(["Firefly", "Avatar","BB", "GOT"])
+
+const newArray = number => {
+    number.forEach((number) => {
+        console.log(number%2==0 ? number*2 : number*3)
+    })   
+}
+newArray([1,2,3,4,5])
