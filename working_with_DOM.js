@@ -22,9 +22,16 @@ function getRandomColor(){
     return color;
 }
 
+let colorbox= document.querySelector("#select")
+let renkbox= document.querySelector("#renkbox")
+colorbox.addEventListener("change", selectBox)
 
 
 
 
-
-
+function selectBox(event){
+    console.log("Etkinlik tipi : " + event.type);
+    console.log("deger : " + event.target.value);
+    renkbox.innerHTML += event.target.value;
+    renkbox.style.color=`${event.target.value}`
+}
