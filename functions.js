@@ -43,3 +43,9 @@ const newArray = number => {
     })   
 }
 newArray([1,2,3,4,5])
+
+function myFunction() {
+    console.log(arguments);
+  }
+  
+  myFunction('a', 'b'); 
