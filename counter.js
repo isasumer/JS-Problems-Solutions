@@ -26,13 +26,26 @@
 
 //Hackerrank loops
 
-function vowelsAndConsonants(s) {
-    console.log(s.length)
-    for (i=0; i < 15; i++) {
-        if ( s[i]== ("a"  "e", "i", "o", "u")) {
-            console.log(s[i])
-        }  
-    }
-}
+// function vowelsAndConsonants(s) {
+//     const vowels = 'aeiou';
+//     var consonants = '';
+    
+//     for(var i = 0; i < s.length; i++) {
+     
+//        (vowels.includes(s[i])) ? console.log(s[i]) : consonants += s[i] + '\n';
+//        }
+//        console.log(consonants.trim());
+//     }
+    
+// vowelsAndConsonants("javascriptloops")
 
+function vowelsAndConsonants(s) {
+    const vowels = 'aeiou';
+    let consonants = '';
+
+    for (const c of Array.from(s)){
+        (vowels.includes(c)) ? console.log(c) : consonants += c + '\n';
+    }
+    console.log(consonants.trim());
+    }
 vowelsAndConsonants("javascriptloops")
