@@ -4,22 +4,27 @@ greeting.addEventListener("click", domClick )
 let renk = document.querySelector("#renk")
 renk.addEventListener("mouseover", domOver)
 
+let kod = document.querySelector("#kod");
+
 function domOver () {
     renk.style.color =getRandomColor()
     greeting.style.color = getRandomColor()
 }
 
 function domClick() {
+
     this.style.color = getRandomColor()
 }
 
 function getRandomColor(){
     let letters= "0123456789ABCDEF";
-    var color ="#"
+    var color1 ="#"
     for (let i=0; i<6; i++) {
-        color += letters[Math.floor(Math.random()*16)];
+        color1 += letters[Math.floor(Math.random()*16)];
+
     }
-    return color;
+    kod.innerHTML = color1;
+    return color1;
 }
 
 let colorbox= document.querySelector("#select")
