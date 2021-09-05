@@ -45,7 +45,7 @@ const str = 'The Quick Brown Fox'; // tHe YeLLoW fOx  // Write a JavaScript prog
 // the case of each character. For example if you input 
 // 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'
 
-let arrWord = console.log((str.split("")))
+let arrWord = (str.split(""))
 let strnew = "";
 arrWord.forEach(element => element == element.toUpperCase() ? strnew += element.toLowerCase() : strnew+=element.toUpperCase())
 
